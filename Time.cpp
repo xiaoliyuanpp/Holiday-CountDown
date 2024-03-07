@@ -9,8 +9,15 @@ string show;
 string RandomText(){
     srand(time(NULL));
     srand(rand());
-    switch (rand()%1){
-        case 0:return "666";
+    switch (rand()%8){
+        case 0:return "梦想总是要有的，万一实现了呢？";
+        case 1:return "你干嘛~哈哈";
+        case 2:return "你不想上学，其实老师也不想上班";
+        case 3:return "老师故意说自己独裁，是因为ta不想上班";
+        case 4:return "往往一个学段在几次考试中就过去了";
+        case 5:return "我们大部分时间其实都被浪费了";
+        case 6:return "其实学校很多规定都是违法的";
+        case 7:return "学生比一些公司员工还累，因为别人996也不会需要早起";
     }
     return "NULL";
 }
@@ -33,7 +40,7 @@ LRESULT CALLBACK WinSunProc(HWND hwnd,UINT uMsg,WPARAM wParam,LPARAM lParam){
             if(date==godate) BoxText="放！假！辣！\n";
             else BoxText="又一天过去了！\n";
             BoxText.append(RandomText());
-            MessageBox(NULL,BoxText.c_str(),"Well done!",MB_OK);
+            MessageBox(hwnd,BoxText.c_str(),"Well done!",MB_OK);
             cout<<date<<endl<<godate;
             DestroyWindow(hwnd);//销毁窗口并发送WM_DESTROY消息，但是程序没有退出
             break;
