@@ -88,10 +88,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine,
 	MainWindow.lpszMenuName = NULL;//设置窗体的菜单,没有，填NULL
 	MainWindow.style = CS_HREDRAW | CS_VREDRAW;//设置窗体风格为水平重画和垂直重画
 	RegisterClass(&MainWindow);//向操作系统注册窗体
-    HWND MainWindowShow = CreateWindow("MainWindow", "放假倒计时",WS_OVERLAPPEDWINDOW,1300,600,400,300,NULL,NULL,hInstance,NULL);
+    HWND MainWindowShow = CreateWindow("MainWindow", "放假倒计时",WS_OVERLAPPEDWINDOW|WS_VISIBLE,1300,600,400,300,NULL,NULL,hInstance,NULL);
     CreateWindow("STATIC",show.c_str(),WS_CHILD|WS_VISIBLE,0,50,400,50,MainWindowShow,NULL,hInstance,NULL);
     CreateWindow("BUTTON","放！学！辣！",WS_CHILD|WS_VISIBLE|BS_DEFPUSHBUTTON,0,150,400,50,MainWindowShow,NULL,hInstance,NULL);//按钮
-    ShowWindow(MainWindowShow, SW_SHOWNORMAL);//把窗体显示出来
 	UpdateWindow(MainWindowShow);//更新窗体
     MSG mainmsg;
 	//消息循环
