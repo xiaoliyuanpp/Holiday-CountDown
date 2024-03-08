@@ -9,7 +9,7 @@ string show;
 string RandomText(){
     srand(time(NULL));
     srand(rand());
-    switch (rand()%8){
+    switch (rand()%11){
         case 0:return "梦想总是要有的，万一实现了呢？";
         case 1:return "你干嘛~哈哈";
         case 2:return "你不想上学，其实老师也不想上班";
@@ -18,8 +18,11 @@ string RandomText(){
         case 5:return "我们大部分时间其实都被浪费了";
         case 6:return "其实学校很多规定都是违法的";
         case 7:return "学生比一些公司员工还累，因为别人996也不会需要早起";
+        case 8:return "大清都亡了，还搁这写八股文！";
+        case 9:return "你以为的不是你以为的，别人以为的不是别人以为的";
+        case 10:return "小学玩6年，初中玩1年忙2年，高中苦3年，大学闲4年";
     }
-    return "NULL";
+    return "恭喜发现彩蛋！请截图发送给作者";
 }
 LRESULT CALLBACK WinSunProc(HWND hwnd,UINT uMsg,WPARAM wParam,LPARAM lParam){
     HDC         hdc;		//设备环境句柄;
