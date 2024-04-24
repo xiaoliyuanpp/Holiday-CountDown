@@ -24,6 +24,12 @@ string RandomText(){
         case 11:return "吸气要扣税，呼气要扣税，憋住气也要扣税，停止呼吸要扣税";
         case 12:return "系鞋带要扣税，穿鞋子要扣税，光脚丫也要扣税";
         case 13:return "钉屠钉要扣税，cheese三明治加番茄酱要扣税";
+        case 14:return "一点控告学校强制穿校服";
+        case 15:return "两点控告学校的饭太难吃";
+        case 16:return "三点控告学校周六日上课";
+        case 17:return "三点半控告学校布置作业太多";
+        case 18:return "四点控告学校购买其它练习";
+        case 19:return "四点半控告......你猜？";
     }
     return "恭喜发现彩蛋！请截图发送给作者";
 }
