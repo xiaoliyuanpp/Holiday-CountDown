@@ -21,6 +21,9 @@ string RandomText(){
         case 8:return "大清都亡了，还搁这写八股文！";
         case 9:return "你以为的不是你以为的，别人以为的不是别人以为的";
         case 10:return "小学玩6年，初中玩1年忙2年，高中苦3年，大学闲4年";
+        case 11:return "吸气要扣税，呼气要扣税，憋住气也要扣税，停止呼吸要扣税";
+        case 12:return "系鞋带要扣税，穿鞋子要扣税，光脚丫也要扣税";
+        case 13:return "钉屠钉要扣税，cheese三明治加番茄酱要扣税";
     }
     return "恭喜发现彩蛋！请截图发送给作者";
 }
