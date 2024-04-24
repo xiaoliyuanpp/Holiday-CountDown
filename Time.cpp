@@ -9,7 +9,7 @@ string show;
 string RandomText(){
     srand(time(NULL));
     srand(rand());
-    switch (rand()%14){
+    switch (rand()%20){
         case 0:return "梦想总是要有的，万一实现了呢？";
         case 1:return "你干嘛~哈哈";
         case 2:return "你不想上学，其实老师也不想上班";
